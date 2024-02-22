@@ -1,5 +1,7 @@
 require('dotenv').config();
+require('express-async-errors');
 const url = process.env.MONGO_URI;
+
 const express = require('express');
 const app = express();
 const connectDB = require('./db/connect.js');
